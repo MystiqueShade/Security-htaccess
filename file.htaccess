@@ -1,4 +1,4 @@
-#ادیت نکنید ،کد ها رو فقط بخشی ک گفته شده @MAHANPHP
+# // MystiqueShade
 RewriteEngine on
 <files “.htaccess”>
 Order Deny,Allow
