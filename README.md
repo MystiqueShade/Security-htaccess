@@ -1,5 +1,5 @@
 # Security with htaccess: Enhancing Your Hosting Environment
- > تقویت امنیت محیط میزبانی با فایل htaccess 
+ > تقویت امنیت محیط میزبانی با فایل htaccess  
 
 ---
 
@@ -27,3 +27,15 @@
 
 ❕ توصیه می‌شود با احتیاط عمل شود، به خصوص اگر با فایل htaccess آشنا نیستید.
 
+---
+<p align="center">
+  <a href="https://t.me/YourTelegramUsername">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+  </a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.youtube.com/YourYouTubeChannel">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
+  </a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.instagram.com/YourInstagramUsername">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+</p>
