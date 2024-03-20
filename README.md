@@ -1,8 +1,10 @@
-Security with htaccess: Enhancing Your Hosting Environment
+# Security with htaccess: Enhancing Your Hosting Environment
 تقویت امنیت محیط میزبانی با فایل htaccess
 
-English:
-htaccess File for Hosting Security Enhancement
+---
+
+## English:
+### htaccess File for Hosting Security Enhancement
 • Prevent unauthorized access to the htaccess file.
 • Block access to JavaScript, text, JSON, and CSS files.
 • Defend against code injection attempts.
@@ -12,8 +14,10 @@ htaccess File for Hosting Security Enhancement
 
 ❕ Exercise caution, especially if unfamiliar with htaccess files.
 
-فارسی:
-فایل htaccess برای بهبود امنیت هاست
+---
+
+## فارسی:
+### فایل htaccess برای بهبود امنیت هاست
 • جلوگیری از دسترسی غیرمجاز به فایل htaccess.
 • مسدودسازی دسترسی به فایل‌های جاوا اسکریپت، متن، JSON، و CSS.
 • پیشگیری از تلاش‌های تزریق کد.
@@ -21,4 +25,4 @@ htaccess File for Hosting Security Enhancement
 • حفاظت در برابر تلاش‌های هک فایل‌های PHP.
 • کاهش کش شدن حافظه وب‌سایت در مرورگر.
 
-❕ توصیه می‌شود با احتیاط عمل شود، به خصوص اگر با فایل htaccess آشنا نیستید
+❕ توصیه می‌شود با احتیاط عمل شود، به خصوص اگر با فایل htaccess آشنا نیستید.
