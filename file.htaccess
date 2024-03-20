@@ -1,0 +1,69 @@
+#ادیت نکنید ،کد ها رو فقط بخشی ک گفته شده @MAHANPHP
+RewriteEngine on
+<files “.htaccess”>
+Order Deny,Allow
+Deny from all
+</files>
+<files “.php”>
+Order Deny,Allow
+Deny from all
+Allow from 149.154.160.0
+Allow from 91.108.4.0
+Allow from 149.154.175.255
+Allow from 91.108.7.255
+Allow from آدرس آیپی شما
+</files>
+Options All -Indexes
+<IfModule mod_rewrite.c>
+RewriteCond %{QUERY_STRING} (\|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule .* index.php [F,L]
+</IfModule>
+<IfModule mod_expires.c>
+
+ExpiresActive On
+
+ExpiresByType image/jpg "access 1 year"
+
+ExpiresByType image/jpeg "access 1 year"
+
+ExpiresByType image/gif "access 1 year"
+
+ExpiresByType image/png "access 1 year"
+
+ExpiresByType text/css "access 1 month"
+
+ExpiresByType application/pdf "access 1 month"
+
+ExpiresByType text/x-javascript "access 1 month"
+
+ExpiresByType application/x-shockwave-flash "access 1 month"
+
+ExpiresByType image/x-icon "access 1 year"
+
+ExpiresDefault "access 2 days"
+
+</IfModule>
+Options +FollowSymlinks
+
+RewriteEngine On
+
+rewritecond %{REQUEST_FILENAME} !^(.+).css$
+
+rewritecond %{REQUEST_FILENAME} !^(.+).js$
+
+rewritecond %{REQUEST_FILENAME} !^(.+).txt$
+rewritecond %{REQUEST_FILENAME} !^(.+).json$
+
+RewriteRule ^(.+)$ /deny/ [nc]
+
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+</IfModule>
+#یادتون نره دامنه و ... جایگزین کنید
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^nam damane\.sabdomain\.ir$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nam damane\.subdomain\.ir$
+RewriteRule ^/?$ "https\:\/\/nam damane\.subdomain\.ir\/" [R=301,L]
